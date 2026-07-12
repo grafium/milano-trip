@@ -115,6 +115,8 @@
   .tl-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
   .tag{font-size:11px;font-weight:600;color:var(--ink-2);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 8px;display:inline-flex;align-items:center;gap:5px}
   .tag svg{width:11px;height:11px;opacity:.7}
+  .site-link{font-size:11px;font-weight:700;color:var(--blue-dark);background:var(--blue-soft);border:1px solid var(--blue-border);border-radius:6px;padding:3px 8px;text-decoration:none;display:inline-flex;align-items:center;gap:4px;transition:background .15s,color .15s}
+  .site-link:hover{background:var(--blue);color:#fff}
   .badge{display:inline-grid;place-items:center;min-width:26px;height:19px;padding:0 6px;border-radius:5px;color:#fff;font-weight:800;font-size:10.5px;font-family:var(--font-display);letter-spacing:.02em}
   .bm1{background:var(--m1)}.bm2{background:var(--m2)}.bm3{background:var(--m3);color:#3a2b00}.bm4{background:var(--m4)}.bmxp{background:var(--mxp)}.bwalk{background:#fff;color:var(--ink-2);border:1px solid var(--line-2)}
   .price-pill{margin-left:auto;font-family:var(--font-display);font-weight:800;font-size:13px;color:var(--ink);background:var(--bg);border:1px solid var(--line);padding:3px 10px;border-radius:999px;flex:none}
@@ -206,7 +208,7 @@
 
     <div class="sidebar-card">
       <b>Tömegközlekedés-barát út</b>
-      <p>A teljes program 2 metróvonalra (M2 + M3) épül, autó nélkül. 14 év alatt a városi közlekedés ingyenes.</p>
+      <p>A teljes program 2 metróvonalra (M2 + M3) épül, autó nélkül — 3 felnőtt, minden helyszín metróval és rövid sétával elérhető.</p>
     </div>
   </aside>
 
@@ -225,7 +227,7 @@
         </div>
       </div>
       <div class="travelers">
-        <div class="avatar a1">CS</div><div class="avatar a2">A</div><div class="avatar a3">G1</div><div class="avatar a4">G2</div>
+        <div class="avatar a1">F1</div><div class="avatar a2">F2</div><div class="avatar a3">F3</div>
       </div>
     </header>
 
@@ -233,8 +235,8 @@
     <div class="stats">
       <div class="stat"><small>Helyszín / megálló</small><div class="v">14 <em>programpont</em></div></div>
       <div class="stat"><small>Metróvonal</small><div class="v">M2 + M3 <em>átszállás nélkül</em></div></div>
-      <div class="stat"><small>Közlekedés összesen</small><div class="v">~106 € <em>4 fős család</em></div></div>
-      <div class="stat"><small>Séta / nap</small><div class="v">4–6 km <em>kényelmes tempó</em></div></div>
+      <div class="stat"><small>Közlekedés összesen</small><div class="v">121,50 € <em>3 felnőtt</em></div></div>
+      <div class="stat"><small>Belépők összesen</small><div class="v">~261 € <em>3 felnőtt · fő látnivalók</em></div></div>
     </div>
 
     <!-- Day tabs -->
@@ -264,7 +266,7 @@
                   <div class="tl-card">
                     <h3>Malpensa T1 → Milano Centrale <span class="badge bmxp">MXP EXPR</span><span class="price-pill">~51 perc</span></h3>
                     <p>Közvetlen vonat, átszállás nélkül. A T1 állomás a −1. szinten, kövessétek a „Treni/Trains" táblákat. Jegyérvényesítés indulás előtt kötelező.</p>
-                    <div class="note"><b>Ár:</b> felnőtt 15 € / gyerek (4–13 év) 7,50 € egy útra · 30 napos retúr: 25 € / 12,50 € · <b>Malpensa Family</b> (2 felnőtt + 2 gyerek): 36 €/irány — ha stimmel a felállás, ez a legolcsóbb.</div>
+                    <div class="note"><b>Ár:</b> felnőtt 15 € egy útra · <b>30 napos retúr: 25 €/fő</b> — a péntek–vasárnapi útra ez a legjobb választás, 3 főre összesen 75 €. Jegy: malpensaexpress.it vagy a Trenord app.</div>
                   </div>
                 </li>
                 <li class="tl-item">
@@ -292,7 +294,7 @@
             </div>
             <div class="card-body">
               <div class="note" style="margin:0 0 16px;background:var(--blue-soft);border-left:3px solid var(--blue);border-radius:0 7px 7px 0;padding:9px 13px;font-size:13px">
-                <b>ATM 3 napos jegy: 15,50 €/felnőtt.</b> Az érvényesítéstől a 3. nap üzemzárásáig (hajnali 3:45) érvényes — péntek délelőtt érvényesítve vasárnap estig kitart. <b>14 év alatt ingyenes.</b> Bankkártyás tap&go is működik a kapuknál (napi plafon 7,60 €).
+                <b>ATM 3 napos jegy: 15,50 €/felnőtt.</b> Az érvényesítéstől a 3. nap üzemzárásáig (hajnali 3:45) érvényes — péntek délelőtt érvényesítve vasárnap estig kitart. 3 felnőttnek összesen 46,50 €. Bankkártyás tap&go is működik a kapuknál (napi plafon 7,60 €).
               </div>
               <ul class="check">
                 <li><span class="cbx todo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9.5" stroke-width="2.2"/></svg></span><span><b>Cenacolo (Utolsó vacsora) jegy</b> — cenacolovinciano.org, negyedéves jegykiadás, azonnal foglalni!</span><span class="prio prio-hi">Sürgős</span></li>
@@ -324,10 +326,10 @@
                   <div class="tl-time">9:00</div>
                   <div class="tl-rail"><div class="tl-dot">1</div></div>
                   <div class="tl-card">
-                    <h3>Duomo di Milano + tetőterasz <span class="price-pill">~2,5 óra</span></h3>
-                    <p>A világ 3. legnagyobb katedrálisa. A tetőteraszra lifttel — a fiálék és vízköpők között sétálni a gyerekeknek is óriási élmény, tiszta időben az Alpokig ellátni.</p>
+                    <h3>Duomo di Milano + tetőterasz <span class="price-pill">26 €/fő · Combo Lift</span></h3>
+                    <p>Hat évszázadon át épült a világ egyik legnagyobb gótikus katedrálisa: 135 fiatorony, 3400 szobor és a csúcson az aranyozott Madonnina — Milánó abszolút jelképe. A Combo Lift jegy (3 főre 78 €) a székesegyházat, a Duomo Múzeumot és a lifttel elérhető tetőteraszt is tartalmazza, ráadásul 2 napig érvényes. Tiszta időben a teraszról az Alpokig ellátni.</p>
                     <div class="note"><b>Tipp:</b> nyitásra érkezzetek — augusztusban délutánra tömeg és 30 °C körüli hőség. Online jegy = sorban állás kihagyva.</div>
-                    <div class="tl-tags"><span class="tag">Előre foglalt jegy</span><span class="tag">Lift a teraszra</span><span class="tag">Dress code: váll/térd fedve</span></div>
+                    <div class="tl-tags"><span class="tag">Előre foglalt jegy</span><span class="tag">Lift a teraszra</span><span class="tag">Dress code: váll/térd fedve</span><a class="site-link" href="https://www.duomomilano.it/" target="_blank" rel="noopener">duomomilano.it ↗</a></div>
                   </div>
                 </li>
                 <li class="tl-item">
@@ -335,16 +337,17 @@
                   <div class="tl-rail"><div class="tl-dot">2</div></div>
                   <div class="tl-card">
                     <h3>Galleria Vittorio Emanuele II <span class="free-pill">INGYENES</span></h3>
-                    <p>Milánó „nappalija" — üvegkupolás passzázs mozaikpadlóval. Kötelező rituálé: sarkon pörgés a bika mozaikján, szerencsét hoz. Ebédre inkább a mellékutcák, a Galleriában turistaárak vannak.</p>
-                    <div class="tl-tags"><span class="tag">Fotópont</span><span class="tag">Ebéd a környéken</span></div>
+                    <p>Az 1867-ben átadott, üvegkupolás passzázs Milánó „nappalija", ahol a mozaikpadló fölött négyemeletnyi neoreneszánsz pompa és a világ legrégebbi működő bevásárlóárkádja fogad. Kötelező rituálé a bika mozaikján sarkon pörögni — a legenda szerint szerencsét hoz. A belépés ingyenes; ebédre inkább a mellékutcákat ajánljuk, a Galleriában turistaárak vannak.</p>
+                    <div class="tl-tags"><span class="tag">Fotópont</span><span class="tag">Ebéd a környéken</span><a class="site-link" href="https://www.yesmilano.it/esplora/luoghi/galleria-vittorio-emanuele-ii" target="_blank" rel="noopener">yesmilano.it ↗</a></div>
                   </div>
                 </li>
                 <li class="tl-item">
                   <div class="tl-time">14:30</div>
                   <div class="tl-rail"><div class="tl-dot">3</div></div>
                   <div class="tl-card">
-                    <h3>Teatro alla Scala — múzeum <span class="price-pill">~1 óra</span></h3>
-                    <p>A világ leghíresebb operaháza. A múzeumban jelmezek, hangszerek, és ha nincs próba, egy páholyból a nézőtérre is be lehet kukkantani.</p>
+                    <h3>Teatro alla Scala — múzeum <span class="price-pill">12 €/fő</span></h3>
+                    <p>Az 1778-ban nyílt La Scala a világ legendás operaháza, ahol Verdi és Puccini művei debütáltak. A színházi múzeumban jelmezek, hangszerek és portrék mesélnek 250 év operatörténetéről, és ha nincs próba, egy páholyból a vörös-arany nézőtérre is be lehet kukkantani. Belépő 3 főre 36 €.</p>
+                    <div class="tl-tags"><a class="site-link" href="https://www.museoscala.org/" target="_blank" rel="noopener">museoscala.org ↗</a></div>
                   </div>
                 </li>
                 <li class="tl-item">
@@ -352,7 +355,7 @@
                   <div class="tl-rail"><div class="tl-dot">4</div></div>
                   <div class="tl-card">
                     <h3>Piazza dei Mercanti + gelato-séta <span class="free-pill">INGYENES</span></h3>
-                    <p>Középkori Milánó egy téren, két perc a Duomótól. Zárásként fagyi — a Ciocolatitaliani biztos siker az egész családnak.</p>
+                    <p>A 13. századi Palazzo della Ragione és a Loggia degli Osii által keretezett tér a középkori Milánó szíve volt: piac, bíróság és városháza egyben. Ma a belváros egyik leghangulatosabb, autómentes zuga — ingyen, bármikor bejárható. Zárásként fagyi a környéken: a Ciocolatitaliani biztos befutó.</p>
                     <div class="tl-tags"><span class="tag">Laza délután</span><span class="tag">Vissza: M3 Duomo → Repubblica</span></div>
                   </div>
                 </li>
@@ -379,10 +382,10 @@
                   <div class="tl-time">9:30</div>
                   <div class="tl-rail"><div class="tl-dot">1</div></div>
                   <div class="tl-card">
-                    <h3>Utolsó vacsora — Santa Maria delle Grazie <span class="price-pill">15 perc</span></h3>
-                    <p>Leonardo remekműve, szigorúan 15 perces idősávokban, max. 35 fő. A QR-kódos jegyet és igazolványt kérik — 20 perccel korábban ott kell lenni.</p>
+                    <h3>Utolsó vacsora — Santa Maria delle Grazie <span class="price-pill">15 € + 2 € foglalás</span></h3>
+                    <p>Leonardo 1495–98 között festette a refektórium falára a művészettörténet talán leghíresebb alkotását, amely a templommal együtt UNESCO-világörökség. A látogatás szigorúan 15 perces idősávokban, maximum 35 fővel zajlik — a jegyet (3 főre ~51 € foglalási díjjal) hónapokkal előre kell megvenni a hivatalos oldalon. QR-kódos jegy és igazolvány kell, 20 perccel korábban érdemes odaérni.</p>
                     <div class="note"><b>Ha nem jutott jegy:</b> a bazilika önmagában is gyönyörű és ingyenes, a hátsó udvar (Bramante-kerengő) rejtett gyöngyszem.</div>
-                    <div class="tl-tags"><span class="tag">UNESCO világörökség</span><span class="tag">Csak előre foglalva</span></div>
+                    <div class="tl-tags"><span class="tag">UNESCO világörökség</span><span class="tag">Csak előre foglalva</span><a class="site-link" href="https://cenacolovinciano.org/" target="_blank" rel="noopener">cenacolovinciano.org ↗</a></div>
                   </div>
                 </li>
                 <li class="tl-item">
@@ -390,7 +393,8 @@
                   <div class="tl-rail"><div class="tl-dot">2</div></div>
                   <div class="tl-card">
                     <h3>Castello Sforzesco <span class="free-pill">UDVAROK INGYEN</span></h3>
-                    <p>Reneszánsz erőd hatalmas udvarokkal — 10 perc séta a Corso Magentán át. Bent Michelangelo utolsó műve, a Pietà Rondanini; gyerekekkel elég az udvar + a szökőkút.</p>
+                    <p>A Visconti és Sforza hercegek 15. századi erődje egykor Európa egyik legnagyobb vára volt, ma Milánó múzeumi negyede — 10 perc séta a Corso Magentán át. A hatalmas udvarok ingyen bejárhatók; a kastélymúzeumok közös jegye 5 €/fő (3 főre 15 €), ezzel látható Michelangelo utolsó, befejezetlen műve, a Pietà Rondanini is. Az udvarokra és a múzeumokra együtt is elég 1–1,5 óra.</p>
+                    <div class="tl-tags"><span class="tag">Múzeumjegy: 5 €/fő</span><a class="site-link" href="https://www.milanocastello.it/" target="_blank" rel="noopener">milanocastello.it ↗</a></div>
                   </div>
                 </li>
                 <li class="tl-item">
@@ -398,17 +402,17 @@
                   <div class="tl-rail"><div class="tl-dot">3</div></div>
                   <div class="tl-card">
                     <h3>Parco Sempione — piknik ebéd <span class="free-pill">INGYENES</span></h3>
-                    <p>Milánó zöld szíve közvetlenül a kastély mögött: tavak teknősökkel, árnyas fű, játszótér. Ha marad energia, a Torre Branca liftje panorámát ad.</p>
-                    <div class="tl-tags"><span class="tag">Játszótér</span><span class="tag">Árnyék a hőségben</span></div>
+                    <p>A kastély mögött elterülő 38 hektáros angolpark Milánó zöld szíve: tavak teknősökkel, árnyas sétányok és nagy füves rétek — ideális piknikhez az augusztusi hőségben. A park ingyenes; a szélén álló Torre Branca acéltorony liftje (kb. 6 €) 108 méter magasból ad panorámát. Itt áll a Triennale design múzeum is, ha marad idő és energia.</p>
+                    <div class="tl-tags"><span class="tag">Piknik</span><span class="tag">Árnyék a hőségben</span><a class="site-link" href="https://www.comune.milano.it/aree-tematiche/verde/verde-pubblico/parchi-cittadini/parco-sempione" target="_blank" rel="noopener">comune.milano.it ↗</a></div>
                   </div>
                 </li>
                 <li class="tl-item">
                   <div class="tl-time">15:00</div>
                   <div class="tl-rail"><div class="tl-dot">4</div></div>
                   <div class="tl-card">
-                    <h3>Pinacoteca di Brera + Brera negyed <span class="price-pill">~2 óra</span></h3>
-                    <p>Milánó legszebb képtára: Raffaello, Caravaggio és Hayez Csókja. Utána a negyed macskaköves utcái — Milánó legfotogénebb környéke, tele kis boltokkal.</p>
-                    <div class="tl-tags"><span class="tag">Online jegy ajánlott</span><span class="tag">15 perc séta a parktól</span></div>
+                    <h3>Pinacoteca di Brera + Brera negyed <span class="price-pill">20 €/fő · Grande Brera</span></h3>
+                    <p>A Napóleon alapította képtár Észak-Itália legrangosabb gyűjteménye: itt lóg Raffaello Mária eljegyzése, Mantegna Halott Krisztusa, Caravaggio Emmauszi vacsorája és Hayez ikonikus Csókja. A Grande Brera jegy (3 főre 60 €) a Palazzo Citterio modern gyűjteményébe is érvényes további 6 napig. Utána érdemes elveszni a negyed macskaköves utcáin — Milánó legfotogénebb környéke.</p>
+                    <div class="tl-tags"><span class="tag">Online jegy ajánlott</span><span class="tag">15 perc séta a parktól</span><a class="site-link" href="https://pinacotecabrera.org/" target="_blank" rel="noopener">pinacotecabrera.org ↗</a></div>
                   </div>
                 </li>
                 <li class="tl-item">
@@ -416,8 +420,9 @@
                   <div class="tl-rail"><div class="tl-dot">5</div></div>
                   <div class="tl-card">
                     <h3>Navigli — esti séta + aperitivo vacsora <span class="badge bm2">M2</span></h3>
-                    <p>Lanza → Porta Genova metróval ~10 perc. Naplementekor a csatornapartok életre kelnek: egy ital árában svédasztalos falatok — családbarát és pénztárcabarát vacsora.</p>
-                    <div class="note"><b>Hazaút fáradt gyerekekkel:</b> Porta Genova → Centrale <b>közvetlen M2</b>, ~15 perc, majd 10 perc séta a hotelig.</div>
+                    <p>A részben Leonardo által tervezett zsilipekkel működött középkori csatornarendszer megmaradt szakaszai ma Milánó legpezsgőbb esti negyedét adják — Lanza → Porta Genova metróval ~10 perc. Naplementekor a rakpartok megtelnek: az aperitivo hagyománya szerint egy ital árában (kb. 10–15 €) svédasztalos falatok járnak, ami kellemes és pénztárcabarát vacsora. A séta ingyenes, a Darsena kikötőmedence felől érdemes indulni.</p>
+                    <div class="note"><b>Hazaút:</b> Porta Genova → Centrale <b>közvetlen M2</b>, ~15 perc, majd 10 perc séta a hotelig.</div>
+                    <div class="tl-tags"><span class="tag">Aperitivo 18:30-tól</span><a class="site-link" href="https://www.yesmilano.it/en" target="_blank" rel="noopener">yesmilano.it ↗</a></div>
                   </div>
                 </li>
               </ul>
@@ -443,10 +448,10 @@
                   <div class="tl-time">10:00</div>
                   <div class="tl-rail"><div class="tl-dot">1</div></div>
                   <div class="tl-card">
-                    <h3>Leonardo da Vinci Tudományos Múzeum <span class="price-pill">2,5–3 óra</span></h3>
-                    <p>Olaszország legnagyobb tudományos múzeuma: Leonardo gépeinek makettjei, űrkiállítás, interaktív termek — a gyerekek kedvence lesz. A megállótól 3 perc.</p>
-                    <div class="note"><b>Toti tengeralattjáró:</b> igazi olasz tengeralattjáró belülről — külön jegyes vezetett túra, érdemes előre foglalni!</div>
-                    <div class="tl-tags"><span class="tag">Vasárnap 10–19h</span><span class="tag">Interaktív</span><span class="tag">Légkondi ✓</span></div>
+                    <h3>Leonardo da Vinci Tudományos Múzeum <span class="price-pill">~14 €/fő</span></h3>
+                    <p>Olaszország legnagyobb tudományos-technikai múzeuma egy 16. századi kolostorépületben: Leonardo gépeinek működő makettjei, űrkiállítás, hajók, mozdonyok és interaktív laborok 50 000 m²-en. Belépő 3 főre ~42 €; számoljatok legalább 2,5–3 órával, ennyi idő alatt is csak a javát lehet bejárni. A S. Ambrogio megállótól 3 perc séta.</p>
+                    <div class="note"><b>Toti tengeralattjáró:</b> igazi olasz tengeralattjáró belülről — külön jegyes vezetett túra (kb. 10 €/fő), a napi idősávok hamar betelnek, érdemes online előre foglalni!</div>
+                    <div class="tl-tags"><span class="tag">Vasárnap 10–19h</span><span class="tag">Interaktív</span><span class="tag">Légkondi ✓</span><a class="site-link" href="https://www.museoscienza.org/" target="_blank" rel="noopener">museoscienza.org ↗</a></div>
                   </div>
                 </li>
                 <li class="tl-item">
@@ -454,7 +459,8 @@
                   <div class="tl-rail"><div class="tl-dot">2</div></div>
                   <div class="tl-card">
                     <h3>Basilica di Sant'Ambrogio <span class="free-pill">INGYENES</span></h3>
-                    <p>Milánó legrégebbi temploma (4. század!), gyönyörű román kori átriummal — 5 perc séta a múzeumtól, gyors, de emlékezetes megálló. Utána ebéd a környéken.</p>
+                    <p>Szent Ambrus püspök alapította 379-ben — Milánó legrégebbi temploma és a lombard román stílus mintaadó remeke, 5 perc sétára a múzeumtól. Az oszlopos átrium, a 9. századi aranyoltár és az altemplom együtt is belefér fél órába. A belépés ingyenes, csak az aranyoltár közeli megtekintése jegyes (kb. 2 €); utána ebéd a környéken.</p>
+                    <div class="tl-tags"><a class="site-link" href="https://www.basilicasantambrogio.it/" target="_blank" rel="noopener">basilicasantambrogio.it ↗</a></div>
                   </div>
                 </li>
                 <li class="tl-item">
@@ -462,8 +468,8 @@
                   <div class="tl-rail"><div class="tl-dot">3</div></div>
                   <div class="tl-card">
                     <h3>Bosco Verticale + Piazza Gae Aulenti <span class="badge bm2">M2</span><span class="free-pill">INGYENES</span></h3>
-                    <p>S. Ambrogio → Garibaldi közvetlen M2-vel (~10 perc). A „függőleges erdő" tornyai + a Biblioteca degli Alberi park: játszótér, szökőkutak, napozóágyak — tökéletes lecsengés.</p>
-                    <div class="tl-tags"><span class="tag">Modern építészet</span><span class="tag">Játszótér & szökőkút</span></div>
+                    <p>Stefano Boeri 2014-es „függőleges erdeje" — a két lakótorony homlokzatán 900 fa és húszezer növény él — a fenntartható építészet világhírű ikonja lett; S. Ambrogio → Garibaldi közvetlen M2-vel (~10 perc). A tornyok lábánál a Biblioteca degli Alberi (BAM) park szökőkutakkal és napozóágyakkal, mellette a futurisztikus Piazza Gae Aulenti. Minden ingyenes, kívülről szabadon látogatható — tökéletes lecsengés a hétvégére.</p>
+                    <div class="tl-tags"><span class="tag">Modern építészet</span><span class="tag">BAM park & szökőkút</span><a class="site-link" href="https://bam.milano.it/" target="_blank" rel="noopener">bam.milano.it ↗</a></div>
                   </div>
                 </li>
                 <li class="tl-item">
@@ -495,21 +501,25 @@
         </div>
 
         <div class="card">
-          <div class="card-head" style="padding:14px 16px"><h2 style="font-size:14.5px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Közlekedési költség — 2+2 fő</h2></div>
+          <div class="card-head" style="padding:14px 16px"><h2 style="font-size:14.5px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Költségkeret — 3 felnőtt</h2></div>
           <div class="card-body" style="padding:14px 16px 16px">
             <div class="facts">
-              <div class="fact"><span>Malpensa Family jegy · oda</span><b>36,00 €</b></div>
-              <div class="fact"><span>Malpensa Family jegy · vissza</span><b>36,00 €</b></div>
-              <div class="fact"><span>ATM 3 napos jegy · 2 felnőtt</span><b>2 × 15,50 €</b></div>
-              <div class="fact"><span>ATM városi jegy · gyerekek (14 alatt)</span><b style="color:var(--green)">0 €</b></div>
+              <div class="fact"><span>Malpensa Express retúr · 3 × 25 €</span><b>75,00 €</b></div>
+              <div class="fact"><span>ATM 3 napos jegy · 3 × 15,50 €</span><b>46,50 €</b></div>
+              <div class="fact"><span>Duomo Combo Lift · 3 × 26 €</span><b>78,00 €</b></div>
+              <div class="fact"><span>Cenacolo · 3 × (15 + 2) €</span><b>51,00 €</b></div>
+              <div class="fact"><span>La Scala múzeum · 3 × 12 €</span><b>36,00 €</b></div>
+              <div class="fact"><span>Pinacoteca di Brera · 3 × 20 €</span><b>60,00 €</b></div>
+              <div class="fact"><span>Leonardo múzeum · 3 × ~14 €</span><b>~42,00 €</b></div>
+              <div class="fact"><span>Opcionális: Castello 15 € + Toti 30 €</span><b>+45,00 €</b></div>
             </div>
-            <div class="total-row"><span>Teljes közlekedés · 3 nap</span><b>103,00 €</b></div>
+            <div class="total-row"><span>Összesen · 3 felnőtt</span><b>~388,50 €</b></div>
           </div>
         </div>
       </aside>
     </div>
 
-    <p class="foot">TripDeck · Milánó családi hétvége · 2026. augusztus 28–30. — Árak: <b>Trenord & ATM, 2026. januári tarifák</b>, indulás előtt érdemes ellenőrizni.</p>
+    <p class="foot">TripDeck · Milánó családi hétvége · 2026. augusztus 28–30. — Árak: <b>hivatalos 2026-os tarifák</b> (Trenord, ATM, Duomo, Brera, Cenacolo stb.), indulás előtt a hivatalos oldalakon érdemes ellenőrizni.</p>
   </main>
 </div>
 
